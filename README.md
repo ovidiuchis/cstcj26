@@ -4,7 +4,7 @@ Acest repository găzduiește informații legate de **Workshop-ul Charles Simeon
 
 ## 🔗 Acces rapid
 
-Accesați website-ul: [CSTCJ 2025](https://ovidiuchis.github.io/cstcj25/)
+Accesați website-ul: [CSTCJ 2025](https://unu-unu-ro.github.io/cstcj25/)
 
 ## 📌 Conținut
 

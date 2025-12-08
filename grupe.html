@@ -1,125 +1,38 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Împărțirea pe grupe mici</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            background-color: #a39680;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 5px;
-        }
-        .group {
-            margin-bottom: 20px;
-            padding: 10px;
-            border-left: 5px solid #a39680;
-            background-color: #eef;
-            border-radius: 5px;
-        }
-        .leader {
-            font-weight: bold;
-            color: #a39680;
-        }
-        .person {
-            margin-left: 10px;
-            
-        }
-        .role {
-            font-style: italic;
-            color: #555;
-            font-weight: bold;
-        }
-    </style>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Împărțirea pe Grupe - CST Cluj 2025</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     
-    <div class="container">
-        <a href="index.html"> <img src="https://cst-media.s3.amazonaws.com/graphic/cst-logo-black-web.jpg" alt="Charles Simeon Trust Logo" style="display: block; margin: 0 auto; width: 200px;">
-            
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container content-container">
+      <div class="header-nav">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Înapoi
         </a>
-        <h2>Împărțirea pe Grupe</h2>
-        
-        <div class="group">
-            <p class="leader">SGL: Diego Lopes</p>
-            <p class="person"><span class="role">APP:</span> Florin Mureșan - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person">Răzvan Iova - Ioan 2:1-12, Ioan 12:20-36</p>
-            <p class="person">Gelu Paul - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Emilian Cîra - Ioan 7:1-44, Ioan 20:11-18</p>
-            <p class="person">Galatanu Cristi - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person">Trufan Ionuț - Ioan 2:1-12, Ioan 12:20-36</p>
-            <p class="person">Iosif Căpușneanu - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Andrei Bușui - Ioan 7:1-44, Ioan 20:11-18</p>
-            <p class="person"><span class="role">OBS:</span> Paul Cathey - Ioan 2:1-12, Ioan 12:20-36</p>
-        </div>
+      </div>
 
-        <div class="group">
-            <p class="leader">SGL: Samuel Clintoc</p>
-            <p class="person">Andrei Pinzaru - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person"><span class="role">APP:</span> Mitras Dudas - Ioan 2:1-12, Ioan 12:20-36</p>
-            <p class="person">Hotea Alexandru - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Crăciun Cristian - Ioan 7:1-44, Ioan 20:11-18</p>
-            <p class="person">Țap Cristian - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person">Birca Daniel - Ioan 2:1-12, Ioan 12:20-36</p>
-            <p class="person">David Traian - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Nicolae Matei - Ioan 7:1-44, Ioan 20:11-18</p>            
-            <p class="person"><span class="role">OBS:</span> Edgar Maron</p>
-        </div>
-
-        <div class="group">
-            <p class="leader">SGL: Ovidiu Hanc</p>
-            <p class="person">Blejeru Silviu - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person">Viorel Culea - Ioan 2:1-12, Ioan 12:20-36</p>
-            <p class="person"><span class="role">APP:</span> Neemia Faur - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Dodan Lucian Beniamin - Ioan 7:1-44, Ioan 20:11-18</p>
-            <p class="person">Oliviu Chira - Ioan 1:1-18, Ioan 11:1-27</p>
-            <p class="person">Doru Marușca - Ioan 4:1-26, Ioan 17</p>
-            <p class="person">Adrian Balta - Ioan 4:1-26, Ioan 17</p>       
-            <p class="person">Marcu Victor Vlad - Ioan 7:1-44	Ioan 20:11-18</p>       
-            <p class="person"><span class="role">OBS:</span> Miculaiciuc Ștefan </p>
-        </div>
-  
-        <div class="group">
-            <p class="leader">SGL: Iosua Faur</p>
-            <p class="person">Ovidiu Chis	Ioan 1:1-18	Ioan 11:1-27</p>
-            <p class="person">Herembas Raul	Ioan 2:1-12	Ioan 12:20-36</p>            
-            <p class="person">Pop Claudiu	Ioan 4:1-26	Ioan 17</p>
-            <p class="person"><span class="role">APP:</span> Daniel Lacatos	Ioan 7:1-44	Ioan 20:11-18</p>
-            <p class="person">Isztojka iancu	Ioan 1:1-18	Ioan 11:1-27            </p>
-            <p class="person">Teliceanu Ciprian 	Ioan 2:1-12	Ioan 12:20-36            </p>
-            <p class="person">Macavei Rares	Ioan 4:1-26	Ioan 17            </p>
-            <p class="person">Ferent-Marian Moldovan	Ioan 7:1-44	Ioan 20:11-18            </p>
-            <p class="person"><span class="role">OBS:</span>Liviu Ungur</p>
-        </div>
-        <div class="group">
-            <p class="leader">SGL: Daniel Suciu</p>
-            <p class="person">Torok Alin	Ioan 1:1-18	Ioan 11:1-27            </p>
-            <p class="person">Laurentiu Mateut 	Ioan 2:1-12	Ioan 12:20-36</p>            
-            <p class="person">Coman Andi	Ioan 4:1-26	Ioan 17            </p>            
-            <p class="person">Căpușneanu Robert Niko Ioan 7:1-44 Ioan 20:11-18</p>
-            <p class="person"><span class="role">APP:</span> Varan Sabin	Ioan 1:1-18	Ioan 11:1-27            </p>
-            <p class="person">Ardelean Sergiu	Ioan 2:1-12	Ioan 12:20-36            </p>            
-            <p class="person">Timotei Caracoancea Ioan 4:1-26 Ioan 17</p>                        
-            <p class="person">Titus Marusca Ioan 7:1-44 Ioan 20:11-18</p>  
-            <p class="person"><span class="role">OBS:</span>Saron Ciupe	Ioan 1:1-18	Ioan 11:1-27</p>
-        </div>
+      <div class="profile">
+        <h1 class="page-title">Împărțirea pe Grupe</h1>
+      </div>
+      
+      <div id="groups-container">
+        <!-- Groups injected here -->
+        <p class="loading-text">Se încarcă...</p>
+      </div>
     </div>
-</body>
+
+    <script src="assets/js/groups.js"></script>
+  </body>
 </html>

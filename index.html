@@ -4,114 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CST Cluj 2025</title>
-    <script
-      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        text-align: center;
-        padding: 20px;
-      }
-      .container {
-        max-width: 100%;
-        margin: 0 auto;
-        background: white;
-        overflow-x: auto;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      .profile img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-      .links a {
-        display: flex;
-        align-items: center;
-        background: #a39680;
-        color: white;
-        text-decoration: none;
-        padding: 12px;
-        margin: 10px auto;
-        border-radius: 5px;
-        transition: 0.3s;
-        font-size: 18px;
-        width: 95%;
-        max-width: 360px;
-        text-align: center;
-        justify-content: flex-start;
-        padding-right: 10px;
-      }
-
-      .links i {
-        font-size: 24px;
-        flex-shrink: 0;
-      }
-
-      .links span {
-        flex-grow: 1;
-        text-align: center;
-      }
-
-      .links a:hover {
-        background: #8d806b;
-      }
-
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-      }
-
-      .popup {
-        background-color: #ffffff;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        max-width: 400px;
-        width: 100%;
-        position: relative;
-      }
-
-      .popup .btn {
-        background-color: #8d806b;
-        color: #ffffff;
-        padding: 0.75rem 1.5rem;
-        margin-top: 2rem;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .popup .btn:hover {
-        background-color: #726a58;
-      }
-
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -119,61 +21,18 @@
         <img
           src="https://cst-media.s3.amazonaws.com/graphic/cst-logo-black-web.jpg"
           alt="Charles Simeon Trust Logo"
-          style="display: block; margin: 0 auto; width: 200px"
+          class="logo"
         />
-        <h2>Seminar de predicare expozitivă biblică</h2>
-        <p>19-21 martie 2025 | Cluj-Napoca</p>
+        <h1 id="event-title">Loading...</h1>
+        <h2 id="event-subtitle"></h2>
+        <p id="event-details" class="event-details"></p>
       </div>
-      <div class="links">
-        <a href="orar.html"
-          ><i class="fa-solid fa-timeline"></i><span>Orar</span></a
-        >
-        <a href="grupe.html"
-          ><i class="fa-solid fa-people-arrows"></i
-          ><span>Impartirea pe grupe</span></a
-        >
-        <a href="ghid.html"
-          ><i class="fa-solid fa-glasses"></i><span>Ghid pregatire</span></a
-        >
-        <a href="assets/notebook.docx"
-          ><i class="fa-solid fa-book"></i
-          ><span>Notebook participant (.docx)</span></a
-        >
-        <a href="https://simeontrust.org/" target="_blank"
-          ><i class="fa-solid fa-arrow-up-right-from-square"></i
-          ><span>simeontrust.org</span></a
-        >
-        <a href="https://forms.gle/CWyr9GgmKQVPbDjY9" target="_blank"
-          ><i class="fa-solid fa-star"></i><span>Evaluare - feedback</span></a
-        >
+      
+      <div id="links-container" class="links">
+        <!-- Links will be injected here by script.js -->
       </div>
     </div>
 
-    <!-- Popup Notification -->
-    <div class="overlay" id="eventPopup" style="display: none">
-      <div class="popup">
-        <button
-          class="close-btn"
-          onclick="document.getElementById('eventPopup').style.display = 'none';"
-        >
-          &times;
-        </button>
-        <h1>Eveniment încheiat</h1>
-        <p>
-          Evenimentul s-a încheiat. Vă mulțumim pentru participare! Puteți
-          rămâne la curent vizitând Hub-ul nostru de Informații.
-        </p>
-        <a href="https://cst.unu-unu.ro/" class="btn"
-          >Mergeți la Hub-ul de Informații</a
-        >
-      </div>
-    </div>
-
-    <script>
-      // Display the popup after 1 second
-      setTimeout(() => {
-        document.getElementById("eventPopup").style.display = "flex";
-      }, 500);
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

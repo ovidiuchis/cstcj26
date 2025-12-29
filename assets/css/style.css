@@ -330,6 +330,45 @@ h2 {
     background-color: #f9f9f9;
 }
 
+/* Registration Page Styles */
+#registration-container {
+    width: 100%;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#registration-container iframe {
+    min-height: 500px;
+    border-radius: 8px;
+}
+
+.help-text {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.link-highlight {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link-highlight:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.loading-text {
+    text-align: center;
+    color: var(--text-color);
+    font-style: italic;
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 10px; /* Reduce outer padding */
@@ -388,5 +427,15 @@ h2 {
         font-weight: 600;
         color: var(--heading-color);
         margin-right: 10px;
+    }
+
+    /* Registration page mobile adjustments */
+    #registration-container {
+        padding: 10px;
+    }
+    
+    .help-text {
+        font-size: 0.85rem;
+        padding: 0 5px;
     }
 }
